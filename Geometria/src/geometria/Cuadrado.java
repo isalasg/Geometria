@@ -20,14 +20,12 @@ public class Cuadrado extends Figura{
     }
 
 
-    public double calcularArea(int lado) {
+    public void calcularArea() {
         Area=lado*lado;
-        return Area;
     }
 
-    public double calcularPerimetro(int lado) {
+    public void calcularPerimetro() {
         Perimetro=lado*4;
-        return Perimetro;
     }
     
 }
