@@ -9,7 +9,7 @@ package geometria;
  *
  * @author Kique Castro
  */
-public class Rectangulo {
+public class Rectangulo extends Figura {
     
     protected double Ancho;
     protected double Largo;
