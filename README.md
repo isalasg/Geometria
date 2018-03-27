@@ -1,8 +1,9 @@
-# Prueba de proyecto colaborativo "Geometría"
-## Nacho, Omar, Cinthia, Enrique, Clara, Andrés, Kevin, Marisol, Eduardo, Jorge, Armando, Osvaldo, Martín, Luis Ángel.
-### Marzo - Abril 2018
-
-## Proyecto Geometría
+# Prueba de proyecto colaborativo Geometría
+## Colaboradores:
+*Nacho, Omar, Cinthia, Enrique, Clara, Andrés, Kevin, Marisol, Eduardo, Jorge, Armando, Osvaldo, Martín, Luis Ángel.*
+## Fecha:
+*Marzo - Abril 2018*
+## Distribución de actividades:
 * Clase base Figura (Nacho).
 * Clases derivadas (Límite Lunes 26)
     - Triángulo (Omar). Ok
