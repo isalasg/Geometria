@@ -16,19 +16,62 @@ public class Rombo extends Figura {
     double DiagonalInferior = 0;
     double a, b, c, d =0;
 
-    public void Calculo(double DiagonalSuperior, double DiagonalInferior, double a, double b, double c, double d )
+    public void CalculoArea()
     {
-        Area = DiagonalSuperior * DiagonalInferior /2;
+        Area = DiagonalSuperior * DiagonalInferior /2;  
+    }
+    
+    public void CalculoPerimetro()
+    {
         Perimetro = a + b + c + d;     
     }
 
-    public double getArea() {
-        return Area;
+    public double getDiagonalSuperior() {
+        return DiagonalSuperior;
     }
 
-    public double getPerimetro() {
-        return Perimetro;
+    public void setDiagonalSuperior(double DiagonalSuperior) {
+        this.DiagonalSuperior = DiagonalSuperior;
     }
-    
+
+    public double getDiagonalInferior() {
+        return DiagonalInferior;
+    }
+
+    public void setDiagonalInferior(double DiagonalInferior) {
+        this.DiagonalInferior = DiagonalInferior;
+    }
+
+    public double getA() {
+        return a;
+    }
+
+    public void setA(double a) {
+        this.a = a;
+    }
+
+    public double getB() {
+        return b;
+    }
+
+    public void setB(double b) {
+        this.b = b;
+    }
+
+    public double getC() {
+        return c;
+    }
+
+    public void setC(double c) {
+        this.c = c;
+    }
+
+    public double getD() {
+        return d;
+    }
+
+    public void setD(double d) {
+        this.d = d;
+    }
     
 }
