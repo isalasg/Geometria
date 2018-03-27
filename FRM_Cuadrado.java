@@ -104,7 +104,7 @@ public class FRM_Cuadrado extends javax.swing.JFrame {
 
         Cuadrado mCuadrado = new Cuadrado();
 
-        mCuadrado.lado = Integer.parseInt(TXT_Lado.getText());
+        int Var = Integer.parseInt(TXT_Lado.getText());
 
         mCuadrado.calcularArea();
         mCuadrado.calcularPerimetro();
