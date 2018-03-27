@@ -12,10 +12,20 @@ import geometria.Figura;
  * @author Andy
  */
 public class Rombo extends Figura {
-       double DiagonalSuperior = 0;
-    double DiagonalInferior = 0;
-    double a, b, c, d =0;
+    private double DiagonalSuperior;
+    private double DiagonalInferior;
+    private double a, b, c, d;
 
+    public Rombo() {
+        DiagonalSuperior = 0;
+        DiagonalInferior = 0;
+        a = 0;
+        b = 0;
+        c = 0;
+        d = 0;
+    }
+
+    
     public void CalculoArea()
     {
         Area = DiagonalSuperior * DiagonalInferior /2;  

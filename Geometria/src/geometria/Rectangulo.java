@@ -11,8 +11,8 @@ package geometria;
  */
 public class Rectangulo extends Figura {
     
-    protected double Ancho;
-    protected double Largo;
+    private double Ancho;
+    private double Largo;
     
     public double getAncho() {
         return Ancho;
@@ -21,16 +21,22 @@ public class Rectangulo extends Figura {
     public double getLargo() {
         return Largo;
     }
+
+    public void setAncho(double Ancho) {
+        this.Ancho = Ancho;
+    }
+
+    public void setLargo(double Largo) {
+        this.Largo = Largo;
+    }
    
-    public double CalcularPerimetro()
+    public void CalcularPerimetro()
     {
         double Perimetro = 2 * Largo + 2 * Ancho;
-        return Perimetro;
     }
-    public double CalcularArea()
+    public void CalcularArea()
     {
         double Area = Ancho * Largo;
-        return Area;
     }
     
     

@@ -10,7 +10,7 @@ package geometria;
  * @author atara
  */
 public class Cuadrado extends Figura{
-    public float lado;
+    private float lado;
     public Cuadrado(){
         lado=0;
     }
