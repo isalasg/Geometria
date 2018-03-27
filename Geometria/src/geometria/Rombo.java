@@ -24,11 +24,10 @@ public class Rombo extends Figura {
         c = 0;
         d = 0;
     }
-
     
     public void CalculoArea()
     {
-        Area = DiagonalSuperior * DiagonalInferior /2;  
+        Area = (DiagonalSuperior * DiagonalInferior) /2;  
     }
     
     public void CalculoPerimetro()
