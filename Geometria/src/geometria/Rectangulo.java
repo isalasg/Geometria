@@ -13,15 +13,9 @@ public class Rectangulo extends Figura {
     
     private double Ancho;
     private double Largo;
+    private double Perimetro;
+    private double Area;
     
-    public double getAncho() {
-        return Ancho;
-    }
-
-    public double getLargo() {
-        return Largo;
-    }
-
     public void setAncho(double Ancho) {
         this.Ancho = Ancho;
     }
@@ -30,14 +24,15 @@ public class Rectangulo extends Figura {
         this.Largo = Largo;
     }
    
-    public void CalcularPerimetro()
+    public double CalcularPerimetro()
     {
-        double Perimetro = 2 * Largo + 2 * Ancho;
+        Perimetro = 2 * Largo + 2 * Ancho;
+        return Perimetro;
     }
-    public void CalcularArea()
+    public double CalcularArea()
     {
-        double Area = Ancho * Largo;
+        Area = Ancho * Largo;
+        return Area;
     }
-    
     
 }
