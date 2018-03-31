@@ -9,12 +9,12 @@ package geometria;
  *
  * @author Kique Castro
  */
-public class FRM_Triangulo extends javax.swing.JFrame {
+public class FrmTriangulo extends javax.swing.JFrame {
 
     /**
      * Creates new form FRM_Triangulo
      */
-    public FRM_Triangulo() {
+    public FrmTriangulo() {
         initComponents();
     }
 
@@ -114,9 +114,7 @@ public class FRM_Triangulo extends javax.swing.JFrame {
                             .addComponent(jLabel6)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(jLabel5)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel4)
-                                    .addGap(23, 23, 23))))))
+                                .addComponent(jLabel4)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -163,31 +161,31 @@ public class FRM_Triangulo extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BtnCalcularAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCalcularAreaActionPerformed
-    Triangulo mTriangulo = new Triangulo();
-    double Area;
-    
-    mTriangulo.setladoA(Integer.parseInt(TxtLadoA.getText()));
-    mTriangulo.setladoA(Integer.parseInt(TxtLadoB.getText()));
-    mTriangulo.setladoA(Integer.parseInt(TxtLadoC.getText()));
-    
-    mTriangulo.calculararea();
-    Area = mTriangulo.getArea();
-    
-    LblArea.setText(String.valueOf(Area));
+        Triangulo mTriangulo = new Triangulo();
+        double Area;
+
+        mTriangulo.setLadoA(Integer.parseInt(TxtLadoA.getText()));
+        mTriangulo.setLadoA(Integer.parseInt(TxtLadoB.getText()));
+        mTriangulo.setLadoA(Integer.parseInt(TxtLadoC.getText()));
+
+        mTriangulo.calculararea();
+        Area = mTriangulo.getArea();
+
+        LblArea.setText(String.valueOf(Area));
     }//GEN-LAST:event_BtnCalcularAreaActionPerformed
 
     private void BtnCalcularPerimetroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnCalcularPerimetroActionPerformed
-    Triangulo mTriangulo = new Triangulo();
-    double Perimetro;
-    
-    mTriangulo.setladoA(Integer.parseInt(TxtLadoA.getText()));
-    mTriangulo.setladoA(Integer.parseInt(TxtLadoB.getText()));
-    mTriangulo.setladoA(Integer.parseInt(TxtLadoC.getText()));
-    
-    mTriangulo.calcularperimetro();
-    Perimetro = mTriangulo.getPerimetro();
-    
-    LblPerimetro.setText(String.valueOf(Perimetro));
+        Triangulo mTriangulo = new Triangulo();
+        double Perimetro;
+
+        mTriangulo.setLadoA(Integer.parseInt(TxtLadoA.getText()));
+        mTriangulo.setLadoA(Integer.parseInt(TxtLadoB.getText()));
+        mTriangulo.setLadoA(Integer.parseInt(TxtLadoC.getText()));
+
+        mTriangulo.calcularperimetro();
+        Perimetro = mTriangulo.getPerimetro();
+
+        LblPerimetro.setText(String.valueOf(Perimetro));
     }//GEN-LAST:event_BtnCalcularPerimetroActionPerformed
 
     /**
@@ -207,20 +205,21 @@ public class FRM_Triangulo extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FRM_Triangulo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmTriangulo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FRM_Triangulo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmTriangulo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FRM_Triangulo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmTriangulo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FRM_Triangulo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmTriangulo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FRM_Triangulo().setVisible(true);
+                new FrmTriangulo().setVisible(true);
             }
         });
     }

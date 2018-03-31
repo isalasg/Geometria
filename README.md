@@ -13,10 +13,10 @@
     - Rombo (Andrés). Ok
     - Trapecio (Kevin). Ok
 * Formularios para cada tipo de figura (Límite Jueves 29)
-    - Triángulo (Marisol)
+    - Triángulo (Marisol). Ok
     - Cuadrado (Eduardo). Ok
-    - Rectángulo (Jorge)
-    - Círculo (Armando)
-    - Rombo (Osvaldo)
-    - Trapecio (Martín)
+    - Rectángulo (Jorge). Ok
+    - Círculo (Armando). Ok (con correcciones)
+    - Rombo (Osvaldo). Ok
+    - Trapecio (Martín). Ok
 * Clase Principal con formulario principal (Luis Angel). Limite Lunes 2/04

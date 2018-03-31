@@ -1,12 +1,15 @@
 package geometria;
+
 /**
  *
  * @author Juanez
  */
-public class FRM_Rombo extends javax.swing.JFrame {
-    public FRM_Rombo() {
+public class FrmRombo extends javax.swing.JFrame {
+
+    public FrmRombo() {
         initComponents();
     }
+
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -197,35 +200,35 @@ public class FRM_Rombo extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void BTN_CalcularAreaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTN_CalcularAreaActionPerformed
-            Rombo mRombo = new Rombo();
-            double Area;
-            
-            mRombo.setDiagonalInferior(Integer.parseInt(TXT_DI.getText()));
-            mRombo.setDiagonalSuperior(Integer.parseInt(TXT_DS.getText()));
-            
-            mRombo.CalculoArea();
-            Area = mRombo.getArea();
-            
-            LBL_Area.setText(String.valueOf(Area));
+        Rombo mRombo = new Rombo();
+        double Area;
+
+        mRombo.setDiagonalInferior(Integer.parseInt(TXT_DI.getText()));
+        mRombo.setDiagonalSuperior(Integer.parseInt(TXT_DS.getText()));
+
+        mRombo.CalculoArea();
+        Area = mRombo.getArea();
+
+        LBL_Area.setText(String.valueOf(Area));
     }//GEN-LAST:event_BTN_CalcularAreaActionPerformed
 
     private void BTN_CalcularPerimetroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTN_CalcularPerimetroActionPerformed
-           Rombo mRombo = new Rombo();
-            double Perimetro;
-            
-            mRombo.setA(Integer.parseInt(TXT_LadoA.getText()));
-            mRombo.setB(Integer.parseInt(TXT_LadoB.getText()));
-            mRombo.setC(Integer.parseInt(TXT_LadoC.getText()));
-            mRombo.setD(Integer.parseInt(TXT_LadoD.getText()));
-            
-            mRombo.CalculoPerimetro();
-            Perimetro = mRombo.getPerimetro();
-            
-            LBL_Perimetro.setText(String.valueOf(Perimetro));
+        Rombo mRombo = new Rombo();
+        double Perimetro;
+
+        mRombo.setA(Integer.parseInt(TXT_LadoA.getText()));
+        mRombo.setB(Integer.parseInt(TXT_LadoB.getText()));
+        mRombo.setC(Integer.parseInt(TXT_LadoC.getText()));
+        mRombo.setD(Integer.parseInt(TXT_LadoD.getText()));
+
+        mRombo.CalculoPerimetro();
+        Perimetro = mRombo.getPerimetro();
+
+        LBL_Perimetro.setText(String.valueOf(Perimetro));
     }//GEN-LAST:event_BTN_CalcularPerimetroActionPerformed
 
     private void BTN_SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTN_SalirActionPerformed
-        setVisible(false); 
+        setVisible(false);
     }//GEN-LAST:event_BTN_SalirActionPerformed
 
     public static void main(String args[]) {
@@ -242,20 +245,21 @@ public class FRM_Rombo extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FRM_Rombo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmRombo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FRM_Rombo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmRombo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FRM_Rombo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmRombo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FRM_Rombo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmRombo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FRM_Rombo().setVisible(true);
+                new FrmRombo().setVisible(true);
             }
         });
     }

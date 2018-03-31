@@ -10,12 +10,13 @@ package geometria;
  * @author KevinCruz
  */
 public class Trapecio extends Figura {
+
     private float Altura;
     private float LadoA;
     private float LadoB;
     private float LadoC;
     private float LadoD;
-    
+
     public Trapecio() {
         Altura = 0;
         LadoA = 0;
@@ -63,13 +64,13 @@ public class Trapecio extends Figura {
     public void setLadoD(float LadoD) {
         this.LadoD = LadoD;
     }
-    
+
     public void calcularArea() {
         Area = Altura * ((LadoA + LadoB) / 2);
     }
-    
+
     public void calcularPerimetro() {
         Perimetro = (LadoA + LadoB + LadoC + LadoD);
     }
-    
+
 }

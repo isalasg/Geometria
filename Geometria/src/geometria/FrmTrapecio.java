@@ -9,12 +9,12 @@ package geometria;
  *
  * @author marti
  */
-public class FRM_trapecio extends javax.swing.JFrame {
+public class FrmTrapecio extends javax.swing.JFrame {
 
     /**
      * Creates new form FRM_trapecio
      */
-    public FRM_trapecio() {
+    public FrmTrapecio() {
         initComponents();
     }
 
@@ -193,14 +193,14 @@ public class FRM_trapecio extends javax.swing.JFrame {
         Trapecio mTrapecio = new Trapecio();
         mTrapecio.setLadoA(Integer.parseInt(L1.getText()));
         mTrapecio.setLadoB(Integer.parseInt(L2.getText()));
-    mTrapecio.setLadoC(Integer.parseInt(L3.getText()));
-    mTrapecio.setLadoD(Integer.parseInt(L4.getText()));
-    mTrapecio.setAltura(Integer.parseInt(Altura.getText()));
-     double Area = mTrapecio.getArea();
+        mTrapecio.setLadoC(Integer.parseInt(L3.getText()));
+        mTrapecio.setLadoD(Integer.parseInt(L4.getText()));
+        mTrapecio.setAltura(Integer.parseInt(Altura.getText()));
+        double Area = mTrapecio.getArea();
         double Perimetro = mTrapecio.getPerimetro();
         areaa.setText(String.valueOf(Area));
         perimetroo.setText(String.valueOf(Perimetro));
-                     
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void L3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_L3ActionPerformed
@@ -240,20 +240,21 @@ public class FRM_trapecio extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FRM_trapecio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmTrapecio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FRM_trapecio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmTrapecio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FRM_trapecio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmTrapecio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FRM_trapecio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmTrapecio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new FRM_trapecio().setVisible(true);
+                new FrmTrapecio().setVisible(true);
             }
         });
     }

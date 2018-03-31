@@ -9,23 +9,24 @@ package geometria;
  *
  * @author atara
  */
-public class Cuadrado extends Figura{
-    private float lado;
-    public Cuadrado(){
-        lado=0;
+public class Cuadrado extends Figura {
+
+    private float Lado;
+
+    public Cuadrado() {
+        Lado = 0;
     }
 
-    public void setLado(int lado) {
-        this.lado = lado;
+    public void setLado(int Lado) {
+        this.Lado = Lado;
     }
-
 
     public void calcularArea() {
-        Area=lado*lado;
+        Area = Lado * Lado;
     }
 
     public void calcularPerimetro() {
-        Perimetro=lado*4;
+        Perimetro = Lado * 4;
     }
-    
+
 }

@@ -12,6 +12,7 @@ import geometria.Figura;
  * @author Andy
  */
 public class Rombo extends Figura {
+
     private double DiagonalSuperior;
     private double DiagonalInferior;
     private double a, b, c, d;
@@ -24,15 +25,13 @@ public class Rombo extends Figura {
         c = 0;
         d = 0;
     }
-    
-    public void CalculoArea()
-    {
-        Area = (DiagonalSuperior * DiagonalInferior) /2;  
+
+    public void CalculoArea() {
+        Area = (DiagonalSuperior * DiagonalInferior) / 2;
     }
-    
-    public void CalculoPerimetro()
-    {
-        Perimetro = a + b + c + d;     
+
+    public void CalculoPerimetro() {
+        Perimetro = a + b + c + d;
     }
 
     public double getDiagonalSuperior() {
@@ -82,5 +81,5 @@ public class Rombo extends Figura {
     public void setD(double d) {
         this.d = d;
     }
-    
+
 }

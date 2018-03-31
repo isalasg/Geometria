@@ -3,19 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package geometria;
 
 /**
  *
  * @author El Armandito
  */
-public class Circu extends javax.swing.JFrame {
+public class FrmCirculo extends javax.swing.JFrame {
 
     /**
      * Creates new form Circu
      */
-    public Circu() {
+    public FrmCirculo() {
         initComponents();
     }
 
@@ -130,16 +129,19 @@ public class Circu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-       setVisible(false);
+        setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        double pi =3.1416;  
-    double radio=Double.parseDouble(TXTradio.getText());
-    
-    TXTper.setText(String.valueOf(2*radio*pi));
-    TXTare.setText(String.valueOf(pi*Math.pow(radio,2)));
+        Circulo mCirculo = new Circulo();
+        float radio = Float.parseFloat(TXTradio.getText());
+        mCirculo.setRadio(radio);
+        mCirculo.setDiametro(radio * 2);
+        mCirculo.calcularArea();
+        mCirculo.calcularPerimetro();
+        TXTper.setText("" + mCirculo.getArea());
+        TXTare.setText("" + mCirculo.getPerimetro());
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -165,20 +167,21 @@ public class Circu extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Circu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmCirculo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Circu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmCirculo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Circu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmCirculo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Circu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmCirculo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Circu().setVisible(true);
+                new FrmCirculo().setVisible(true);
             }
         });
     }

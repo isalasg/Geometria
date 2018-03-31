@@ -10,43 +10,43 @@ package geometria;
  * @author 8
  */
 public class Triangulo extends Figura {
-    private double ladoA;
-    private double ladoB;
-    private double ladoC;
+    private double LadoA;
+    private double LadoB;
+    private double LadoC;
     private double S;
     public Triangulo()
     {
-        ladoA = 0;
-        ladoB = 0;
-        ladoC = 0;
+        LadoA = 0;
+        LadoB = 0;
+        LadoC = 0;
         S = 0; 
     }
 
-    public void setladoA(double ladoA) {
-        this.ladoA = ladoA;
+    public void setLadoA(double LadoA) {
+        this.LadoA = LadoA;
     }
-    public void setladoB(double ladoB) {
-        this.ladoB = ladoB;
+    public void setLadoB(double LadoB) {
+        this.LadoB = LadoB;
     }
-    public void setLadoC(double ladoC) {
-        this.ladoC = ladoC;
+    public void setLadoC(double LadoC) {
+        this.LadoC = LadoC;
     }    
-    public double getladoA() {
-        return ladoA;
+    public double getLadoA() {
+        return LadoA;
     }
-    public double getladoB() {
-        return ladoB;
+    public double getLadoB() {
+        return LadoB;
     }
-    public double getladoC() {
-        return ladoC;
+    public double getLadoC() {
+        return LadoC;
     }    
     public void calcularperimetro()
     {
-        Perimetro = ladoA+ladoB+ladoC;
+        Perimetro = LadoA+LadoB+LadoC;
     }
     public void calculararea()
     {
         S = Perimetro/2;
-        Area = Math.sqrt((S)*((S -ladoA)*(S - ladoB)*(S - ladoC)));
+        Area = Math.sqrt((S)*((S -LadoA)*(S - LadoB)*(S - LadoC)));
     }
 }
